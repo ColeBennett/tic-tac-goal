@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="background" fitHeight="750.0" fitWidth="800.0" opacity="0.5" pickOnBounds="true" visible="false">
+         <image>
+            <Image url="@field.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="850.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label style="-fx-border-color: aqua; -fx-border-radius: 5; -fx-padding: 10; -fx-background-color: #262626;" text="Tic-Tac-Goal" textFill="#467af2">
+               <font>
+                  <Font name="Chalkduster" size="45.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="roundLabel" text="Round 1 of 3" textFill="#1eff00">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Chalkduster" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="gameTime" text="Game Time: 00:00" textFill="#fff059">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Courier" size="13.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="grid" gridLinesVisible="true" prefHeight="598.0" prefWidth="780.0" VBox.vgrow="SOMETIMES">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <HBox fx:id="playerxInfo" alignment="CENTER" prefHeight="50.0" prefWidth="275.0" spacing="10.0" styleClass="playerx-info">
+                     <children>
+                        <Text fx:id="playerxName" fill="#e30000" strokeType="OUTSIDE" strokeWidth="0.0" text="You [X]">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="playerxScore" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <Label minHeight="-Infinity" minWidth="-Infinity" text="vs" textFill="WHITE">
+                     <font>
+                        <Font name="Chalkduster" size="25.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="playeroInfo" alignment="CENTER" prefHeight="50.0" prefWidth="275.0" spacing="10.0" styleClass="playero-info">
+                     <children>
+                        <Text fx:id="playeroName" fill="#006aff" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer [O]">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="playeroScore" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,127 @@
+#title {
+    -fx-font-family: Chalkduster;
+    -fx-font-size: 50px;
+    -fx-text-fill: white;
+    -fx-background-color: black;
+    -fx-border-radius: 0;
+    -fx-border-color: aqua;
+    -fx-padding: 10px;
+}
+
+#username {
+    -fx-background-color: transparent;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-border-color: lime;
+    -fx-border-radius: 3;
+}
+
+.menubutton {
+    -fx-background-color: transparent;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-font-family: Chalkduster;
+
+    -fx-border-color: aqua;
+    -fx-border-radius: 3;
+}
+.menubutton:hover {
+    -fx-text-fill: white;
+    -fx-border-color: white;
+}
+.menubutton:armed {
+    -fx-opacity: 50%;
+    -fx-border-color: orange;
+}
+
+.tile {
+    -fx-background-color: transparent;
+    -fx-border-color: orange;
+    -fx-border-width: .5;
+}
+.tile:hover {
+    -fx-opacity: 75%;
+    -fx-background-color: #804d00;
+}
+
+.tile-win {
+    -fx-background-color: #005c99;
+}
+.tile-tie {
+    -fx-background-color: #b30000;
+}
+
+.click {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-font-size: 65;
+    -fx-text-fill: lime;
+    -fx-font-family: Chalkduster;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+}
+.click:armed {
+    -fx-opacity: 50%;
+}
+
+.click-x {
+    -fx-text-fill: red;
+}
+.click-o {
+    -fx-text-fill: blue;
+}
+
+.shirt:hover {
+    -fx-opacity: 50%;
+}
+.shirt:armed {
+    -fx-opacity: 25%;
+}
+
+.playerx-info {
+    -fx-background-color: #262626;
+    -fx-border-color: red;
+    -fx-border-radius: 3;
+}
+.playero-info {
+    -fx-background-color: #262626;
+    -fx-border-color: blue;
+    -fx-border-radius: 3;
+}
+
+###############
+#
+# List View
+#
+###############
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: gray;
+}
+
+.list-cell:selected {
+    -fx-background-color: blue;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.list-cell:hover {
+    -fx-background-color: gray;
+}
+
+/*
+.list-cell:odd {
+    -fx-background-color: transparent;
+}*/
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+
+}
+
+.list-cell:filled:hover {
+    -fx-opacity: 50%;
+}

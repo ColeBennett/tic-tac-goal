@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="base" fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="background" fitHeight="600.0" fitWidth="900.0" layoutX="100.0" layoutY="70.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@background.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="412.0" layoutY="129.0" prefHeight="500.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="title" text="TIC-TAC-GOAL" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="50.0" top="60.0" />
+               </VBox.margin></Label>
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="44.0" prefWidth="900.0" spacing="10.0">
+               <children>
+                  <Button fx:id="singleplayer" mnemonicParsing="false" styleClass="menubutton" text="Single Player" />
+                  <Button fx:id="multiplayer" mnemonicParsing="false" styleClass="menubutton" text="Multiplayer" />
+                  <TextField fx:id="username" promptText="Enter name">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></TextField>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <HBox alignment="BOTTOM_CENTER" layoutX="-9.0" layoutY="403.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0">
+               <children>
+                  <StackPane alignment="TOP_CENTER">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="shirt">
+                           <image>
+                              <Image url="@shirt.png" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#ffd300" />
+                           </effect>
+                        </ImageView>
+                        <Label text="Bennett" textFill="WHITE">
+                           <StackPane.margin>
+                              <Insets right="8.0" top="25.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label prefHeight="44.0" prefWidth="34.0" text="4" textFill="WHITE">
+                           <StackPane.margin>
+                              <Insets right="10.0" top="40.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font size="71.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane alignment="TOP_CENTER">
+                     <children>
+                        <ImageView fitHeight="188.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" styleClass="shirt">
+                           <image>
+                              <Image url="@shirt.png" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#0009ff" />
+                           </effect>
+                        </ImageView>
+                        <Label text="Chansasitorn" textFill="WHITE">
+                           <StackPane.margin>
+                              <Insets right="8.0" top="25.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label text="9" textFill="WHITE">
+                           <StackPane.margin>
+                              <Insets right="10.0" top="50.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font size="71.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+                  <StackPane alignment="TOP_CENTER">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="shirt">
+                           <image>
+                              <Image url="@shirt.png" />
+                           </image>
+                           <effect>
+                              <DropShadow color="#ea00ff" />
+                           </effect>
+                        </ImageView>
+                        <Label text="Arger" textFill="WHITE">
+                           <StackPane.margin>
+                              <Insets right="8.0" top="25.0" />
+                           </StackPane.margin>
+                        </Label>
+                        <Label text="7" textFill="#f5f3f3">
+                           <StackPane.margin>
+                              <Insets right="10.0" top="40.0" />
+                           </StackPane.margin>
+                           <font>
+                              <Font size="71.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

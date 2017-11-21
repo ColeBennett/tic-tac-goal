@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="800.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="850.0" prefWidth="900.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label style="-fx-border-color: aqua; -fx-border-radius: 5; -fx-padding: 10; -fx-background-color: #262626;" text="Tic-Tac-Goal" textFill="#467af2">
+               <font>
+                  <Font name="Chalkduster" size="45.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="Multiplayer Matchmaking" textFill="#09ff00">
+               <font>
+                  <Font name="Chalkduster" size="21.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="245.0" prefWidth="760.0" spacing="5.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label fx:id="playersOnline" text="Players Online: 0" textFill="#fff200">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Label>
+                  <Label text="Select a player to start a match" textFill="#c3c3c3" underline="true" />
+                  <ListView fx:id="playerList" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: lime;" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <HBox>
+               <children>
+                  <Button fx:id="back" mnemonicParsing="false" text="Back" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
